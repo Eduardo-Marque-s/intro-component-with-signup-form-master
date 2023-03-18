@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Dancing+Script:wght@500&family=Fraunces:opsz,wght@9..144,700&family=Hanken+Grotesk:wght@500;700;800&family=Inter:wght@400;700&family=Josefin+Sans:wght@300;400;600&family=Karla:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Lato:wght@300;400;700;900&family=League+Spartan:wght@400;500;700&family=Lexend+Deca&family=Manrope:wght@500;700&family=Montserrat:wght@500;700&family=Ms+Madi&family=Noto+Sans+JP:wght@100&family=Open+Sans&family=Outfit:wght@300;400;600;700&family=Overpass:wght@400;700&family=Poppins:wght@400;500;600;700&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --Red: hsl(0, 100%, 74%);
+    --Green: hsl(154, 59%, 51%);
+    --Blue: hsl(248, 32%, 49%);
+    --Dark-Blue: hsl(249, 10%, 26%);
+    --Grayish-Blue: hsl(246, 25%, 77%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url(./images/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%);
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.corpo {
+    width: 1245px;
+    height: 580px;
+    display: flex;
+}
+
+.conteudo1 {
+    width: 623px;
+    height: 580px;
+    padding: 15% 4rem;
+}
+
+h1 {
+    font-size: 49px;
+    line-height: 1.1;
+}
+
+.text {
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.conteudo2 {
+    width: 623px;
+    height: 580px;
+    padding: 2% 2.5rem;
+
+}
+
+.titulo {
+    width: 540px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-weight: 640;
+    background-color: hsl(248, 32%, 49%);
+    box-shadow: rgba(0, 0, 0, 0.178)0px 8px 0px;
+}
+
+#form {
+    width: 100%;
+    margin-top: 20px;
+    padding: 2% 2.5rem;
+    border-radius: 10px;
+    background-color:white;
+    box-shadow: rgba(0, 0, 0, 0.178)0px 9px 0px;
+}
+
+#fname,
+#lname,
+#email,
+#password {
+    width: 460px;
+    height: 55px;
+    padding: 0 2rem;
+    margin-top: 20px;
+    border: 2px solid hsl(246, 25%, 77%);
+    border-radius: 5px;
+}
+
+input:focus{
+    outline: none;
+}
+
+form p span{
+    color: hsl(0, 100%, 74%);
+    font-weight: 800;
+}
+
+button {
+    width: 460px;
+    height: 55px;
+    margin-top: 25px;
+    border-radius: 5px;
+    border: 0px solid hsl(154, 59%, 45%);
+    border-bottom-width: 4px;
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    background-color: hsl(154, 59%, 51%);
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: hsl(154, 65%, 66%);
+}
+
+.texto {
+    font-size: 10px;
+    margin-top: 17px;
+    text-align: center;
+    color: hsl(246, 25%, 77%);
+}
+
+.error{
+    border: 2px solid hsl(0, 100%, 74%);
+    background-image: url(./images/icon-error.svg);
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+}
+
+.error-text{
+    font-size: 12px;
+    font-style: italic;
+    padding-left: 50%;
+    color: hsl(0, 100%, 74%);
+}
+
+.success {
+    border: 2px solid hsl(154, 59%, 51%);
+}
+
+
+@media screen and (max-width:968px) {
+    body {
+        text-align: center;
+    }
+
+    .corpo {
+        display: flex;
+        width: 375px;
+        height: 964px;
+        flex-direction: column;
+    }
+
+    .conteudo1 {
+        width: 375px;
+        height: 293px;
+        margin: 0 15px 25px;
+
+    }
+
+    h1 {
+        
+        font-size: 25px;
+        line-height: 1.1;
+        
+    }
+
+    .text {
+        
+        font-size: 15px;
+        margin-top: 20px;
+        
+        
+    }
+
+    .conteudo2 {
+        width: 375px;
+        height: 570px;
+        flex-direction: column;
+
+    }
+
+    .titulo {
+        width: 100%;
+        background-color: hsl(248, 32%, 49%);
+        padding: 0 3rem;
+        border-radius: 10px;
+        margin-top: -55px;
+        box-shadow: rgba(0, 0, 0, 0.178)0px 8px 0px;
+    }
+
+    #form {
+        width:100%;
+        padding: 0 0 5%;
+    }
+
+    .error-text{
+        font-size: 12px;
+        font-style: italic;
+        padding-left: 30%;
+        color: hsl(0, 100%, 74%);
+    }
+
+    #fname,
+    #lname,
+    #email,
+    #password {
+        width: 280px;
+        height: 57px;
+        padding: 0rem 2rem;
+        margin-top: 25px;
+        border: 1px solid hsl(246, 25%, 77%);
+        border-radius: 5px;
+    }
+
+    button {
+        width: 280px;
+        height: 57px;
+    }
+
+    .texto {
+        margin-top: 17px;
+        text-align: center;
+        font-size: 10px;
+        color: hsl(246, 25%, 77%);
+    }
+}
